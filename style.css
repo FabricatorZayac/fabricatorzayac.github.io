@@ -1,8 +1,22 @@
 body {
     margin: 40px auto;
-    max-width: 650px;
-    line-height: 1.6;
+    max-width: 65rem;
+    line-height: 1.5;
     font-size: 18px;
     color: #444;
     padding: 0 10px;
+}
+
+div {
+    width: fit-content;
+}
+
+div.sourceCode {
+    border: solid;
+    border-color: #444;
+    border-width: 0.3rem;
+}
+
+pre.sourceCode {
+    margin: 0.3rem;
 }

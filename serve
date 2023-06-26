@@ -1,0 +1,22 @@
+#!/bin/bash
+
+WATCH() {
+	while true; do
+		inotifywait -qre close_write .;
+		make all;
+        kill -s SIGHUP $browserpid
+	done
+}
+
+python -m http.server &
+serverpid=$!
+
+surf http://localhost:8000 &
+browserpid=$!
+
+WATCH &
+watchpid=$!
+
+wait $browserpid
+kill $watchpid
+kill $serverpid

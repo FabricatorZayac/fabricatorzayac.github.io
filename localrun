@@ -1,9 +1,0 @@
-#!/bin/sh
-python -m http.server &
-serverpid=$!
-
-surf http://localhost:8000 &
-browserpid=$!
-
-wait $browserpid
-kill $serverpid
