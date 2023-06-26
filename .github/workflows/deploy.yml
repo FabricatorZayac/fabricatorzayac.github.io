@@ -14,12 +14,18 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: nikeee/setup-pandoc@v1
-      - run: make all
-      - uses: actions/configure-pages@v3
-      - uses: actions/upload-pages-artifact@v1
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Set up pandoc
+        uses: nikeee/setup-pandoc@v1
+      - name: Generate HTML
+        run: make all
+      - name: Configure pages
+        uses: actions/configure-pages@v3
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
           path: '.'
-      - uses: actions/deploy-pages@v2
+      - name: Deploy pages
+        uses: actions/deploy-pages@v2
 
