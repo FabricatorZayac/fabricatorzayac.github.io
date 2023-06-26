@@ -12,4 +12,4 @@ open: all
 	surf index.html
 
 clean:
-	rm $(TARGETS)
+	rm -f $(TARGETS)

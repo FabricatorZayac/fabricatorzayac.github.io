@@ -1,7 +1,6 @@
 # The cool and epic FabricatorZayac blog
 ### C++ stuff
-  <!-- - [Oxidize your C++](https://github.com/Zayac-The-Engineer/ftl) -->
-  - [Oxidize your C++](/cpp/ftl.html)
+  - [Oxidize your C++](cpp/ftl.html)
   - [Serde clone in C++](https://github.com/Zayac-The-Engineer/serde-cpp)
 
 ### Web dev
