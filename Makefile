@@ -6,7 +6,7 @@ TARGETS  := $(SRCS:%.md=%.html)
 all: $(TARGETS)
 
 %.html: %.md
-	pandoc $< | cat header.html - > $@
+	pandoc $< | cat skeleton.html - > $@
 
 local: all
 	./localrun
