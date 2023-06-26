@@ -1,6 +1,6 @@
 # Rust-like traits in C++
 
-Basically, the way you do it is you make an un-instantiatable template
+Basically, the way you do it is you make an uninstantiatable template
 
 ```c++
 template<typename T>
@@ -23,18 +23,72 @@ template<>
 struct Serialize<int> {
     template<Serializer S>
     static ftl::Result<typename S::Ok, typename S::Err>
-    serialize(RGB &self, S serializer) { ... }
+    serialize(RGB &self, S &serializer) { ... }
 }
 ```
 
 Unfortunately, we can't have the nice call syntax like in rust.
 Instead of
+
 ```rust
 let foo: i32 = 69;
 foo.serialize(some_serializer);
 ```
+
 you will have to do
+
 ```c++
 int foo = 69;
 Serialize<int>::serialize(foo, some_serializer);
 ```
+
+Unfortunately, to have a constraint like `where T: Serialize`
+you will need to write a separate concept.
+And concepts can't share names with structs,
+so we will have to name it differently.
+
+```c++
+template<typename T>
+concept Serializable = requires(const T &self,
+                                archetypes::Serializer &serializer) {
+    { Serialize<T>::serialize(self, serializer) }
+    -> std::same_as<ftl::Result<typename archetypes::Serializer::Ok,
+                                typename archetypes::Serializer::Err>>;
+}
+```
+
+You may be asking what the hell is an archetype?
+It's a fake struct an instance of which would satisfy a concept.
+
+```c++
+namespace archetypes {
+    struct Serializer {
+        using Ok = void;
+        using Error = Error;
+        using SerializeStruct = SerializeStruct;
+
+        fst::result::Result<Ok, Error> serialize_bool(const bool &);
+
+        fst::result::Result<Ok, Error> serialize_char(const char &);
+
+        fst::result::Result<Ok, Error> serialize_short(const short &);
+        fst::result::Result<Ok, Error> serialize_int(const int &);
+        fst::result::Result<Ok, Error> serialize_long(const long &);
+        fst::result::Result<Ok, Error> serialize_long_long(const long long &);
+
+        fst::result::Result<Ok, Error> serialize_float(const float&);
+        fst::result::Result<Ok, Error> serialize_double(const double&);
+
+        fst::result::Result<Ok, Error> serialize_str(const fst::str &);
+        fst::result::Result<SerializeStruct *, Error>
+        serialize_struct(const fst::str &, const fst::usize);
+    };
+}
+
+// should succeed
+static_assert(Serializer<archetypes::Serializer>);
+```
+
+The deserializer constraints are currently not implemented,
+due to the deserializer being much, much more complicated than the serializer.
+
