@@ -1,12 +1,15 @@
+SRCS     := $(shell find . -name "*.md" ! -name "README.md")
+TARGETS  := $(SRCS:%.md=%.html)
+
 .PHONY: all open clean
 
-all: index.html
+all: $(TARGETS)
 
-index.html: index.md
-	pandoc index.md | cat header.html - > index.html
+%.html: %.md
+	pandoc $< | cat header.html - > $@
 
 open: all
 	surf index.html
 
 clean:
-	rm index.html
+	rm $(TARGETS)

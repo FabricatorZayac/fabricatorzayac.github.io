@@ -1,6 +1,7 @@
 # The cool and epic FabricatorZayac blog
 ### C++ stuff
-  - [Oxidize your C++](https://github.com/Zayac-The-Engineer/ftl)
+  <!-- - [Oxidize your C++](https://github.com/Zayac-The-Engineer/ftl) -->
+  - [Oxidize your C++](/cpp/ftl.html)
   - [Serde clone in C++](https://github.com/Zayac-The-Engineer/serde-cpp)
 
 ### Web dev
@@ -15,3 +16,5 @@
   - [Tmux thingy](https://github.com/Zayac-The-Engineer/tmux)
 
 If you haven't noticed yet, I don't really know what a blog is.
+
+CSS shamelessly borrowed from [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/)
