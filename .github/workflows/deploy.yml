@@ -17,3 +17,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
           publish_branch: deploy
+          publish_dir: .
