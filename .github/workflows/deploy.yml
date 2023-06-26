@@ -11,3 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: nikeee/setup-pandoc@v1
       - run: make clean all
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
