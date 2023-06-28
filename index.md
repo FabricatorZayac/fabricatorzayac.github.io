@@ -16,7 +16,7 @@
 
 ### Configs
   - [Neovim config](https://github.com/Zayac-The-Engineer/nvim)
-  - [Tmux thingy](https://github.com/Zayac-The-Engineer/tmux)
+  - [Tmux config](https://github.com/Zayac-The-Engineer/tmux)
 
 If you haven't noticed yet, I don't really know what a blog is.
 

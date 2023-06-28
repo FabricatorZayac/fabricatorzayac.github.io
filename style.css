@@ -15,8 +15,24 @@ div.sourceCode {
     border: solid;
     border-color: #444;
     border-width: 0.3rem;
+    background: #f9f5d7;
 }
 
 pre.sourceCode {
     margin: 0.3rem;
+}
+
+span.kw,
+span.cf,
+span.at {
+    color: #9d0006;
+}
+span.dt {
+    color: #b57614;
+}
+span.dv {
+    color: #8f3f71;
+}
+span.op {
+    color: #af3a03;
 }
