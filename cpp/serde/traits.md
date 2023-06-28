@@ -67,21 +67,21 @@ namespace archetypes {
         using Error = Error;
         using SerializeStruct = SerializeStruct;
 
-        fst::result::Result<Ok, Error> serialize_bool(const bool &);
+        ftl::Result<Ok, Error> serialize_bool(const bool &);
 
-        fst::result::Result<Ok, Error> serialize_char(const char &);
+        ftl::Result<Ok, Error> serialize_char(const char &);
 
-        fst::result::Result<Ok, Error> serialize_short(const short &);
-        fst::result::Result<Ok, Error> serialize_int(const int &);
-        fst::result::Result<Ok, Error> serialize_long(const long &);
-        fst::result::Result<Ok, Error> serialize_long_long(const long long &);
+        ftl::Result<Ok, Error> serialize_short(const short &);
+        ftl::Result<Ok, Error> serialize_int(const int &);
+        ftl::Result<Ok, Error> serialize_long(const long &);
+        ftl::Result<Ok, Error> serialize_long_long(const long long &);
 
-        fst::result::Result<Ok, Error> serialize_float(const float&);
-        fst::result::Result<Ok, Error> serialize_double(const double&);
+        ftl::Result<Ok, Error> serialize_float(const float&);
+        ftl::Result<Ok, Error> serialize_double(const double&);
 
-        fst::result::Result<Ok, Error> serialize_str(const fst::str &);
-        fst::result::Result<SerializeStruct *, Error>
-        serialize_struct(const fst::str &, const fst::usize);
+        ftl::Result<Ok, Error> serialize_str(const ftl::str &);
+        ftl::Result<SerializeStruct *, Error>
+        serialize_struct(const ftl::str &, const ftl::usize);
     };
 }
 
