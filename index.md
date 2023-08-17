@@ -11,6 +11,7 @@
   [Yew](https://github.com/Zayac-The-Engineer/yew-example) and sqlx
 
 ### Game dev
+- [Zig wasm4 demo](zig/wasm4demo.html)
 - I don't know if this actually counts as game dev, but here's
   [Conway's game of Life in Zig/SDL2](https://github.com/Zayac-The-Engineer/zig4lyfe)
 - An unfinished
