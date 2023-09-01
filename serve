@@ -8,10 +8,10 @@ WATCH() {
     done
 }
 
-python -m http.server &
+http-server &
 serverpid=$!
 
-surf http://localhost:8000 &
+surf http://localhost:8080 &
 browserpid=$!
 
 WATCH &
