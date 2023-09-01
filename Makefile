@@ -13,3 +13,7 @@ serve: all
 
 clean:
 	rm -f $(TARGETS)
+
+# DON'T USE OUTSIDE OF PAGES DEPLOYMENT
+purge-deploy: all
+	rm -f $(SRCS)
