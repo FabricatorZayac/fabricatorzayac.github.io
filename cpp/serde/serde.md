@@ -13,5 +13,5 @@ serialization and deserialization framework.
 - `SERIALIZE` and `DESERIALIZE` "derive" macros.
 
 ### See also
-- [FTL](/cpp/ftl/ftl.html)
-- [Rust-like traits in C++](/cpp/serde/traits.html)
+- [FTL](/cpp/ftl/ftl.md)
+- [Rust-like traits in C++](/cpp/serde/traits.md)

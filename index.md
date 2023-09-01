@@ -1,9 +1,9 @@
 # The cool and epic FabricatorZayac blog
 ### C++ stuff
 - FTL:
-  [Oxidize your C++](cpp/ftl/ftl.html)
+  [Oxidize your C++](cpp/ftl/ftl.md)
 - serde-cpp:
-  [Serde clone in C++](cpp/serde/serde.html)
+  [Serde clone in C++](cpp/serde/serde.md)
 
 ### Web dev
 - This [website](https://github.com/FabricatorZayac/fabricatorzayac.github.io),
@@ -13,7 +13,7 @@
   [Yew](https://github.com/Zayac-The-Engineer/yew-example) and sqlx
 
 ### Game dev
-- [Zig wasm4 demo](zig/wasm4demo.html)
+- [Zig wasm4 demo](zig/wasm4demo.md)
 - I don't know if this actually counts as game dev, but here's
   [Conway's game of Life in Zig/SDL2](https://github.com/Zayac-The-Engineer/zig4lyfe)
 - An unfinished
