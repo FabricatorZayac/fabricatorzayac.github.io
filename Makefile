@@ -6,7 +6,7 @@ TARGETS  := $(SRCS:%.md=%.html)
 all: $(TARGETS)
 
 %.html: %.md style.css skeleton.html
-	pandoc $< | cat skeleton.html - > $@
+	pandoc $< --template=skeleton.html > $@
 
 serve: all
 	./serve
