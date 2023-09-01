@@ -10,6 +10,6 @@
     $body$
     <script src="/script.js"></script>
     <script>
-        history.pushState({page: 1}, "Title", window.location.pathname.replace(".html", ""))
+        history.replaceState({page: 1}, "", window.location.pathname.replace(".html", ""))
     </script>
 </body>
