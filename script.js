@@ -1,7 +1,11 @@
 async function setTheme(theme) {
-    let link = document.getElementById("theme");
-    link.href = `/${theme}.css`;
-    localStorage.setItem("theme", theme);
+    if (theme == "dark") {
+        document.body.className = "dark";
+        localStorage.setItem("theme", "dark");
+    } else {
+        document.body.className = "";
+        localStorage.setItem("theme", "light");
+    }
 }
 
 async function toggle() {

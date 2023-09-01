@@ -6,6 +6,8 @@
   [Serde clone in C++](cpp/serde/serde.html)
 
 ### Web dev
+- This [website](https://github.com/FabricatorZayac/fabricatorzayac.github.io),
+  generated statically from markdown
 - Basic CRUD thingy with Rust
   [Rocket](https://github.com/Zayac-The-Engineer/rocket-example) /
   [Yew](https://github.com/Zayac-The-Engineer/yew-example) and sqlx

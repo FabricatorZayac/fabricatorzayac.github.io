@@ -49,3 +49,67 @@ pre.sourceCode {
         padding: 0.25em 0.75em;
     }
 }
+
+/* Themes */
+/* light (default) */
+body {
+    color: #444;
+}
+
+div.sourceCode {
+    border-color: #444;
+    background: #f9f5d7;
+    color: #3c3836;
+}
+
+span.kw,
+span.cf,
+span.at {
+    color: #9d0006;
+}
+span.dt {
+    color: #b57614;
+}
+span.dv {
+    color: #8f3f71;
+}
+span.op {
+    color: #af3a03;
+}
+
+/* dark */
+body.dark {
+    color: #fbf1c7;
+    background: #282828;
+}
+
+body.dark div.sourceCode {
+    border-color: #444;
+    background: #1d2021;
+    color: #ebdbb2;
+}
+
+body.dark span.kw,
+body.dark span.cf,
+body.dark span.at {
+    color: #cc241d;
+}
+body.dark span.dt {
+    color: #d79921;
+}
+body.dark span.dv {
+    color: #b16286;
+}
+body.dark span.op {
+    color: #d65d0e;
+}
+
+body.dark a {
+    color: #83a598;
+}
+body.dark a:visited {
+    color: #d3869b;
+}
+body.dark a:active {
+    color: #fb4934;
+}
