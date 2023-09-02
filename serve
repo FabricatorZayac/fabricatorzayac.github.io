@@ -1,0 +1,23 @@
+#!/bin/bash
+
+WATCH() {
+    while true; do
+        inotifywait -qre close_write .;
+        make all;
+        kill -s SIGHUP $browserpid
+    done
+}
+
+http-server &
+serverpid=$!
+
+surf http://localhost:8080 &
+browserpid=$!
+
+WATCH &
+watchpid=$!
+
+wait $browserpid
+kill $watchpid
+kill $serverpid
+kill $browserpid
