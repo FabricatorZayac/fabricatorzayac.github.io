@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Convert md to html
-        uses: FabricatorZayac/pandoctor@master
+        uses: FabricatorZayac/pandoctor@main
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
