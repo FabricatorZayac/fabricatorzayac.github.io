@@ -1,12 +1,13 @@
 SRCS     := $(shell find . -name "*.md" ! -name "README.md")
 TARGETS  := $(SRCS:%.md=%.html)
+TEMPLATE := skeleton.html
 
 .PHONY: all clean serve
 
 all: $(TARGETS)
 
-%.html: %.md style.css skeleton.html
-	pandoc --template=skeleton.html $< -o $@
+%.html: %.md $(TEMPLATE)
+	pandoc --template=$(TEMPLATE) $< -o $@
 
 serve: all
 	./serve
