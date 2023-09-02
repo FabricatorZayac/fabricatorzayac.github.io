@@ -22,3 +22,7 @@
 ### Configs
 - [Neovim config](https://github.com/Zayac-The-Engineer/nvim)
 - [Tmux config](https://github.com/Zayac-The-Engineer/tmux)
+
+---
+
+Powered by [Pandoctor](actions/pandoctor.md)
