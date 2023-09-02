@@ -14,10 +14,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Set up pandoc
-        uses: nikeee/setup-pandoc@v1
-      - name: Generate HTML
-        run: make all purge-deploy
+      - name: Convert md to html
+        uses: FabricatorZayac/pandoctor@master
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
