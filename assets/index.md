@@ -12,8 +12,8 @@
   generated statically from markdown
 
 ### C/C++ stuff
-- [cfmt](https://github.com/FabricatorZayac/cfmt): single-header formatting library
-- [serde-cpp](cpp/serde.md): Serde clone in C++
+- [cfmt](cxx/cfmt.md): single-header formatting library
+- [serde-cpp](cxx/serde.md): Serde clone in C++
 
 ### Configs
 - [Neovim config](https://github.com/FabricatorZayac/nvim)
