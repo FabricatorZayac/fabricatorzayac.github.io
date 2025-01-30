@@ -26,6 +26,9 @@ fn main() {
                 link rel="stylesheet" href="/style.css";
             }
             body {
+                div { 
+                    a href="/index.html" class="button" { "Home" }
+                }
                 (parse_markdown(&fs::read_to_string(mdpath).unwrap()))
                 script { "history.replaceState({page: 1}, '', window.location.pathname.replace('.html', ''))" }
             }
