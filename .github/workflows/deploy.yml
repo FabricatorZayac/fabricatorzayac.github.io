@@ -22,6 +22,8 @@ jobs:
         with:
           profile: minimal
           toolchain: nightly
+
+      - run: mv template site
       - run: cargo run
 
       - name: Configure pages

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <script src="/script.js"></script>
+        <script>
+            let href = window.location.href;
+            if (window.location.href != href.replace(".md", ".html"))
+                window.location.href = window.location.pathname.replace(".md", ".html")
+        </script>
+    </body>
+</html>
+
