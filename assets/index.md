@@ -13,8 +13,7 @@
 
 ### C/C++ stuff
 - [cfmt](https://github.com/FabricatorZayac/cfmt): single-header formatting library
-- [FTL](cpp/ftl/ftl.md): Oxidize your C++
-- [serde-cpp](cpp/serde/serde.md): Serde clone in C++
+- [serde-cpp](cpp/serde.md): Serde clone in C++
 
 ### Configs
 - [Neovim config](https://github.com/FabricatorZayac/nvim)
