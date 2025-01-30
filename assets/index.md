@@ -1,24 +1,21 @@
 # The cool and epic FabricatorZayac blog
-### C++ stuff
-- FTL:
-  [Oxidize your C++](cpp/ftl/ftl.md)
-- serde-cpp:
-  [Serde clone in C++](cpp/serde/serde.md)
+### Game dev
+- [Latest Demo](http://diaco.strangled.net:4444) of whatever I'm working on with wasm4 right now
+- [Blazen](https://github.com/FabricatorZayac/blazen), currently WIP Balatro
+  demake for wasm4 written in Rust.
+- [Zig wasm4 vector demo](zig/wasm4demo.md)
+- I don't know if this actually counts as game dev, but here's
+  [Conway's game of Life in Zig/SDL2](https://github.com/FabricatorZayac/zig4lyfe)
 
 ### Web dev
 - This [website](https://github.com/FabricatorZayac/fabricatorzayac.github.io),
   generated statically from markdown
-- Basic CRUD thingy with Rust
-  [Rocket](https://github.com/Zayac-The-Engineer/rocket-example) /
-  [Yew](https://github.com/Zayac-The-Engineer/yew-example) and sqlx
 
-### Game dev
-- [Zig wasm4 demo](zig/wasm4demo.md)
-- I don't know if this actually counts as game dev, but here's
-  [Conway's game of Life in Zig/SDL2](https://github.com/Zayac-The-Engineer/zig4lyfe)
-- An unfinished
-  [WASM4 breakout type thing](https://github.com/Zayac-The-Engineer/central-breakout)
+### C/C++ stuff
+- [cfmt](https://github.com/FabricatorZayac/cfmt): single-header formatting library
+- [FTL](cpp/ftl/ftl.md): Oxidize your C++
+- [serde-cpp](cpp/serde/serde.md): Serde clone in C++
 
 ### Configs
-- [Neovim config](https://github.com/Zayac-The-Engineer/nvim)
-- [Tmux config](https://github.com/Zayac-The-Engineer/tmux)
+- [Neovim config](https://github.com/FabricatorZayac/nvim)
+- [Tmux config](https://github.com/FabricatorZayac/tmux)
