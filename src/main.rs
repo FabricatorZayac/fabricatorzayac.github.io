@@ -26,9 +26,7 @@ fn main() {
                 link rel="stylesheet" href="/style.css";
             }
             body {
-                button class="button-54" type="button" onclick="toggle()" { "Toggle theme" }
                 (parse_markdown(&fs::read_to_string(mdpath).unwrap()))
-                script src="/script.js" {}
                 script { "history.replaceState({page: 1}, '', window.location.pathname.replace('.html', ''))" }
             }
         };
