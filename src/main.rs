@@ -27,7 +27,11 @@ fn main() {
             }
             body {
                 div { 
-                    a href="/index.html" class="button" { "Home" }
+                    a href="/" {
+                        button class="button-54" {
+                            "Home" 
+                        }
+                    }
                 }
                 (parse_markdown(&fs::read_to_string(mdpath).unwrap()))
                 script { "history.replaceState({page: 1}, '', window.location.pathname.replace('.html', ''))" }
@@ -50,6 +54,7 @@ fn parse_markdown(md: &str) -> PreEscaped<String> {
     let mut options = comrak::Options::default();
     options.extension.underline = true;
     options.extension.strikethrough = true;
+    options.render.unsafe_ = true;
 
     let adapter = comrak::plugins::syntect::SyntectAdapterBuilder::new()
         .theme("InspiredGitHub")
