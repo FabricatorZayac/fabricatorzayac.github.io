@@ -1,5 +1,7 @@
 # Zig wasm4 demo
 
+[GitHub link](https://github.com/FabricatorZayac/zig-wasm4)
+
 ### What is [wasm4](https://wasm4.org)
 Wasm4 is a fantasy console for making retro-style games with a 4 color screen,
 160x160px framebuffer, memory mapped I/O and a 64kb limit on memory and cart size.
@@ -17,6 +19,4 @@ byte matters.
 In it's current state it's a single line which you can move around and
 modify it's angular velocity
 
-[Check it out](https://fabricatorzayac.github.io/zig-wasm4)
-
-[Source code](https://github.com/FabricatorZayac/zig-wasm4)
+<iframe src="https://fabricatorzayac.github.io/zig-wasm4" style="height: 35rem; width: 100%"></iframe>

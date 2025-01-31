@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install nightly
         uses: actions-rs/toolchain@v1
@@ -26,11 +26,9 @@ jobs:
       - run: mv template site
       - run: cargo run
 
-      - name: Configure pages
-        uses: actions/configure-pages@v3
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './site'
       - name: Deploy pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
