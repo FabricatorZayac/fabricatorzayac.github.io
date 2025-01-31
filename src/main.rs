@@ -27,10 +27,8 @@ fn main() {
             }
             body {
                 div { 
-                    a href="/" {
-                        button class="button-54" {
-                            "Home" 
-                        }
+                    form {
+                        button formaction="/" class="button-54" { "Home" }
                     }
                 }
                 (parse_markdown(&fs::read_to_string(mdpath).unwrap()))
