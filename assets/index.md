@@ -3,7 +3,7 @@
 - [Latest Demo](http://diaco.strangled.net:4444) of whatever I'm working on with wasm4 right now
 - [Blazen](https://github.com/FabricatorZayac/blazen), currently WIP Balatro
   demake for wasm4 written in Rust.
-- [Loderunner](https://github.com/FabricatorZayac/loderunner-wasm4-cpp) clone in wasm4 written in C++
+- [Loderunner](gamedev/loderunner.md) clone in wasm4 written in C++
 - [Zig wasm4 vector demo](zig/wasm4demo.md)
 - I don't know if this actually counts as game dev, but here's
   [Conway's game of Life in Zig/SDL2](https://github.com/FabricatorZayac/zig4lyfe)
