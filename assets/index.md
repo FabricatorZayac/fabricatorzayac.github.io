@@ -1,4 +1,9 @@
 # FabricatorZayac Homepage
+
+### Migrating to Codeberg!
+The migration to [Codeberg pages](https://fabricatorzayac.codeberg.page/)
+is currently work in progress
+
 ### Game dev
 - [Latest Demo](http://diaco.strangled.net:4444) of whatever I'm working on with wasm4 right now
 - [Blazen](https://github.com/FabricatorZayac/blazen), currently WIP Balatro
@@ -13,6 +18,8 @@
   generated statically from markdown in a mere 60 lines of Rust and 3 dependencies
 
 ### C/C++ stuff
+- [wasm3-multimemory](https://codeberg.org/FabricatorZayac/wasm3-multimemory):
+  wasm3 fork with multimemory support. Will 
 - [gcpp](cxx/gcpp.md): garbage collector in C++
 - [cfmt](cxx/cfmt.md): single-header formatting library
 - [serde-cpp](cxx/serde.md): Serde clone in C++
