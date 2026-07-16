@@ -2,6 +2,7 @@
 
 ### Migrating to Codeberg!
 The migration to [Codeberg pages](https://fabricatorzayac.codeberg.page/)
+and [Codeberg](https://codeberg.org/FabricatorZayac)
 is currently work in progress
 
 ### Game dev
